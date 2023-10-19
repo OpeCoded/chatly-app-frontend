@@ -20,6 +20,10 @@ const Photos = lazy(() => import('@pages/social/photos/Photos'));
 const Profile = lazy(() => import('@pages/social/profile/Profile'));
 const Streams = lazy(() => import('@pages/social/streams/Streams'));
 
+/*
+AppRouter: router component
+elements: list of our pages paths and respective components
+*/
 export const AppRouter = () => {
   const elements = useRoutes([
     {

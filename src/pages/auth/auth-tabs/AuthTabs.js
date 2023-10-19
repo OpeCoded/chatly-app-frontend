@@ -7,7 +7,14 @@ import useLocalStorage from '@hooks/useLocalStorage';
 import { useNavigate } from 'react-router-dom';
 import { Utils } from '@services/utils/utils.service';
 import PageLoader from '@components/page-loader/PageLoader';
-
+/*
+AuthTabs: Auth tab component
+<>: top level entity tags
+[type, setType]: state var and function [var, func] used to make changes to the tab that will be displayed
+useState('Sign In'): this is our default tab that would be displayed
+type === 'Sign In' &&: sets the tab to display based on the onclick type that was set
+${type === 'Sign In' ? 'active' : '': dynamically adding the 'active' class name to change the background color of Sign in or up text TAB
+*/
 const AuthTabs = () => {
   const [type, setType] = useState('Sign In');
   const keepLoggedIn = useLocalStorage('keepLoggedIn', 'get');

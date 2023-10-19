@@ -1,7 +1,11 @@
 import PropTypes from 'prop-types';
 import '@components/input/Input.scss';
 import { forwardRef } from 'react';
-
+/*
+Input: input field component
+Input.propTypes: component props datatypes
+id: for unit testing
+*/
 const Input = forwardRef((props, ref) => (
   <div className="form-row">
     {props.labelText && (
