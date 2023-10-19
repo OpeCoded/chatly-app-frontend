@@ -10,6 +10,12 @@ import useLocalStorage from '@hooks/useLocalStorage';
 import { Utils } from '@services/utils/utils.service';
 import useSessionStorage from '@hooks/useSessionStorage';
 
+/*
+Login: login component
+We import our Input, Button components and pass approriate props needed to them
+<FaArrowRight />: react icon -fontawesome
+
+*/
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
